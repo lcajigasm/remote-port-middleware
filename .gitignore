@@ -1,0 +1,19 @@
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PHPStorm meta
+.phpstorm.meta.php
+
+# Coverage / build
+coverage/
+.phpunit.result.cache

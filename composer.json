@@ -1,25 +1,38 @@
 {
     "name": "luisinder/remote-port-middleware",
-    "description": "PSR-7 Middleware that determines the client remote port and stores it as an ServerRequest attribute",
+    "description": "PSR-7 / PSR-15 middleware that determines the client remote TCP port and stores it as a ServerRequest attribute (remotePort). Compatible with Slim 3 (legacy) & Slim 4+.",
     "keywords": [
-        "psr7", "middleware", "port"
+        "psr7",
+        "psr15",
+        "middleware",
+        "slim",
+        "remote port",
+        "port"
     ],
-    "homepage": "https://github.com/luisinder/remote-port-middleware",
+    "homepage": "https://github.com/lcajigasm/remote-port-middleware",
     "type": "library",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Luis Cajigas",
-            "email": "luic87@gmail.com",
-            "homepage": "https://github.com/luisinder"
+            "homepage": "https://github.com/lcajigasm"
         }
     ],
     "require": {
-        "psr/http-message": "^1.0"
+        "php": ">=8.0",
+        "psr/http-message": "^1.0 || ^2.0",
+        "psr/http-server-middleware": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Luisinder\\Middleware\\": "src"
+            "Luisinder\\Middleware\\": "src/"
         }
+    },
+    "support": {
+        "issues": "https://github.com/lcajigasm/remote-port-middleware/issues",
+        "source": "https://github.com/lcajigasm/remote-port-middleware"
+    },
+    "suggest": {
+        "slim/slim": "Use Slim Framework (v4+) to integrate this middleware in a Slim app"
     }
 }
